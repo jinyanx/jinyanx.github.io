@@ -1,0 +1,110 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>我♥狗婧婧,too </title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+
+
+	<div class="love-container"></div>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+                                <span class="comments">/**</span><br />
+                                <span class="space"/><span class="comments">* 12:38 AM, Bremen...Oct 02, 2019 </span><br />
+                                <span class="space"/><span class="comments">* 答应了小仔子要做一个记录在一起时间的网页...</span><br />
+				<span class="space"/><span class="comments">* 我jio得这个还行？...</span><br />
+				<span class="space"/><span class="comments">* ...嘻嘻嘻... </span><br />
+                                <span class="space"/><span class="comments">* 希望你会喜欢 (・ω・)  </span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+
+				<span class="comments">// We've been together since Dec 4, 2018 </span><br />
+
+				I've been thinking of you every single day...</span><br />
+
+				I would like to thank you... </span><br />
+				for everything you've said... </span><br />
+				...and for everything you've done </span><br />
+				...Love feels just like you ♥ </span><br />
+				You make me decent. </span><br />
+				<span class="comments">//hanks for loving me babe </span><br />
+				<span class="comments">//Coz You're doing it perfectly:) </span><br />
+				待续a 我我我..我还有话想说呢
+
+
+
+
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages"> 跟仔子在一起已经...
+						 
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+					          <br/>
+						<div class="signature"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			
+			Copyright &copy; 2019
+                        <a href="https://jinyanx.github.io/">帅狗子</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2018, 12-1, 4-1);
+		together.setHours(24);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+  <embed src="music/liebeist.mp3" width="0" height="0" border="0" autostart="ture" loop="ture" />
+</body>
+</html>
